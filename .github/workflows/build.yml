@@ -43,6 +43,7 @@ jobs:
           RELEASE=${{ matrix.release }}
           PROJECT=nova
           PROJECT_REF=${{ env.PROJECT_REF }}
+          EXTRAS=
           PROFILES=ceph openvswitch configdrive qemu migration
           DIST_PACKAGES=ovmf qemu-efi-aarch64
           PIP_PACKAGES=
