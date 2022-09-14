@@ -8,3 +8,4 @@ COPY --from=bindep --link /runtime-pip-packages /runtime-pip-packages
 FROM quay.io/vexxhost/openstack-runtime-focal:4c527d0620405558f513ce89c297133151a34c31 AS runtime
 COPY --from=bindep --link /runtime-dist-packages /runtime-dist-packages
 COPY --from=builder --link /var/lib/openstack /var/lib/openstack
+ADD https://github.com/novnc/novnc.git#v1.3.0 /usr/share/novnc
