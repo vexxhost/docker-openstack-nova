@@ -43,6 +43,7 @@ jobs:
         build-args: |-
           RELEASE=${{ matrix.release }}
           PROJECT=nova
+          PROJECT_REPO=https://github.com/openstack/nova
           PROJECT_REF=${{ env.PROJECT_REF }}
           EXTRAS=
           PROFILES=ceph openvswitch configdrive qemu migration
